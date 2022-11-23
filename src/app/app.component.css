@@ -1,0 +1,51 @@
+.title{
+    text-align: center;
+}
+.cover{
+    border: 1px solid black;
+    margin: auto;
+    
+    width: 700px;
+    border-radius: 10px;
+    background-color: rgb(67, 175, 238);
+    padding: 10px;
+    box-shadow: 5px 10px rgb(105, 216, 228);
+}
+.outline{
+    text-align: center;
+}
+.from{
+    display: inline-block;
+    width:300px
+}
+#src{
+    margin-left: 22px;
+    width: 170px;
+    height: 22px;
+}
+.to{
+    display: inline-block;
+}
+#tar{
+    margin-left: 22px;
+    width: 170px;
+    height: 22px;
+}
+.sub{
+    margin-left: 50px;
+}
+.sub:hover{
+    cursor: pointer;
+}
+.table {
+    margin: auto;
+
+}
+.box {
+border: 1px solid black;
+width: 60px;
+height: 22px;
+text-align: center;
+border-radius: 25%;
+background-color: white;
+}

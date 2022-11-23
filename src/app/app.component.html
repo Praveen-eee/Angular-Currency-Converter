@@ -1,0 +1,45 @@
+<div class="title"><h1>Currency Converter</h1></div>
+
+<div class="cover">
+  <div class="outline">
+    <div class="user">
+      Amount: <input class="inp" type="number" name="num" [(ngModel)]="num" />
+    </div>
+    <br />
+    <div class="from">
+      <label for="src">From:</label>
+      <!-- <select #src (change)="disp(src.value)"> -->
+
+      <select #src>
+        <option>Select</option>
+        <option value="inr">INR- Indian Rupees</option>
+        <option value="usd">USD- US Dollar</option>
+        <option value="eur">EUR- Euro</option>
+        <option value="aud">AUD- Australian Dollar</option>
+      </select>
+    </div>
+    <div class="to">
+      <label for="tar">To:</label>
+      <!-- <select #src (change)="disp(src.value)"> -->
+
+      <select #tar>
+        <option>Select</option>
+        <option value="inr">INR- Indian Rupees</option>
+        <option value="usd">USD- US Dollar</option>
+        <option value="eur">EUR- Euro</option>
+        <option value="aud">AUD- Australian Dollar</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <button (click)="sub(src.value, tar.value)" class="sub">SUBMIT</button>
+    <br />
+    <br />
+    <table class="table">
+      <tr>
+        <td>Result:</td>
+        <td class="box">{{ res }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
